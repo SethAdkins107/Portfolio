@@ -1,0 +1,65 @@
+/* This page handles the styling for the page*/
+
+/* Central body of the page that contains the rest of the visuals*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Whole header section */
+header {
+    background-color: #6336d5;
+    color: #ffffff;
+    padding: 15px;
+}
+
+/* Container for the dropdown object*/
+.dropdown {
+    display: inline-block;
+}
+
+/* Dropdown box */
+.dropdownButton {
+    background-color: #ffffff;
+    color: #6336d5;
+    border: outset;
+    cursor: pointer;
+}
+
+/* Box around the dropdown items */
+.dropdownContent {
+    display: none;
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+/* Links inside the dropdown */
+.dropdownContent a {
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+/* Shows the dropdown menu when user hovers over the dropdown button */
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+/* Hover effects on the original dropdown box*/
+.dropdown:hover .dropdownButton {
+    background-color: #6336d5;
+    color: #ffffff;
+}
+
+/* Hover effects on the boxes of dropdown links */
+.dropdownContent a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Link to the CS page */
+#cs {
+    color: #6336d5;
+}
+

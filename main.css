@@ -2,19 +2,27 @@
 
 /* Central body of the page that contains the rest of the visuals*/
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
 
 /* Whole header section */
 header {
+    position: relative;
+    display: flex;
     background-color: #6336d5;
     color: #ffffff;
-    padding: 15px;
+    width: 100%;
+    padding: 30px;
 }
 
 /* Container for the dropdown object*/
 .dropdown {
+    width: 50%;
+    padding: 0% 4% 0% 4%;
     display: inline-block;
 }
 
@@ -22,16 +30,27 @@ header {
 .dropdownButton {
     background-color: #ffffff;
     color: #6336d5;
+    width: 100px;
     border: outset;
     cursor: pointer;
+}
+
+/*Locations for each dropdown */
+.style {
+    width: 20%;
+}
+
+.language {
+    width: 20%;
 }
 
 /* Box around the dropdown items */
 .dropdownContent {
     display: none;
-    position: relative;
+    position: absolute;
     background-color: #ffffff;
-    width: 100%;
+    width: 100px;
+    z-index: 1;
 }
 
 /* Links inside the dropdown */
@@ -61,5 +80,17 @@ header {
 /* Link to the CS page */
 #cs {
     color: #6336d5;
+}
+
+/* General styling for content boxes within body */
+section {
+    width: 80%;
+    text-align: center;
+}
+
+/* General styling for paragraphs of info */
+p {
+    text-align: left;
+    text-indent: 30px;
 }
 

@@ -9,6 +9,8 @@ body {
     padding: 0;
 }
 
+/* General styling for object types */
+
 /* Whole header section */
 header {
     position: relative;
@@ -18,6 +20,43 @@ header {
     width: 100%;
     padding: 30px;
 }
+
+/* General styling for content boxes within body */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+}
+
+/* General styling for headings */
+h2, h3 {
+    margin-bottom: .15rem;
+}
+
+/* General styling for paragraphs of info */
+p {
+    width: 85%;
+    text-align: left;
+    text-indent: 30px;
+}
+
+/* General styling for horizontal lines */
+hr {
+    background-color: #272727;
+    height: .1vh;
+    width: 70vw;
+    border: none;
+}
+
+/* General styling for embedded material */
+embed {
+    width: 80%;
+    height: 110vh;
+    border: solid;
+}
+
+/* Styling for the dropdown menus */
 
 /* Container for the dropdown object*/
 .dropdown {
@@ -82,15 +121,4 @@ header {
     color: #6336d5;
 }
 
-/* General styling for content boxes within body */
-section {
-    width: 80%;
-    text-align: center;
-}
-
-/* General styling for paragraphs of info */
-p {
-    text-align: left;
-    text-indent: 30px;
-}
 

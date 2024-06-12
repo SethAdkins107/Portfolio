@@ -59,7 +59,7 @@ embed {
 /* Styling for the dropdown menus */
 
 /* Container for the dropdown object*/
-.dropdown {
+.dropdown, nav {
     width: 50%;
     padding: 0% 4% 0% 4%;
     display: inline-block;

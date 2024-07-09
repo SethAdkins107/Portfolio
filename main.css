@@ -1,7 +1,7 @@
 /* This page handles the styling for the page*/
 
 /* Central body of the page that contains the rest of the visuals*/
-body {
+body, footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +38,7 @@ h2, h3 {
 p {
     width: 85%;
     text-align: left;
-    text-indent: 30px;
+    text-indent: 3ch;
 }
 
 /* General styling for horizontal lines */

@@ -8,6 +8,10 @@
     <meta name="description" content="My Portfolio">
     <title>Portfolio</title>
     <link rel="stylesheet" href="main.css">
+
+    <!-- Calls API from Adobe to provide a PDF viewer for my resume -->
+    <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+    <script type="text/javascript" src="fancy.js"></script>
 </head>
 
 <!-- Holds the majority of things seen on the page by the user -->
@@ -44,10 +48,12 @@
     <!-- Holds a brief "About Me" section to introduce the page -->
     <section id="aboutMe" aria-label="About Me">
         <h2>About Me</h2>
-        <p>I hope to be a well-rounded, adventurous individual and to display myself here. 
+        <p>
+            I hope to be a well-rounded, adventurous individual and to display myself here. 
             I am interested in pursuing a job that allows me to continue to solve problems and create, primarily in software development. 
             I am also very intrigued by many things, really anything that helps me understand this world, from filosophy to video games to sports to travel.
-            Thanks for taking the time to peruse what I've found and what I've made. It means a lot.</p>
+            Thanks for taking the time to peruse what I've found and what I've made. It means a lot.
+        </p>
     </section>
 
     <!-- A horizontal line to help with visual clarity -->
@@ -74,8 +80,24 @@
     <!-- A horizontal line to help with visual clarity -->
     <br><br>
 
-    <section id="resume" aria-label="My Resume">
-        <h2>My Resume</h2>
-        <embed src="Resume.pdf">
-    </section>
+    <div id="adobe-dc-view"></div>
+    <script type="text/javascript">
+        document.addEventListener("adobe_dc_view_sdk.ready", function()
+        {
+           var adobeDCView = new AdobeDC.View({clientId: "463f26f5d78d49cba827efd6d4c7519a", divId: "adobe-dc-view"});
+           adobeDCView.previewFile(
+          {
+              content:  {location: {url: "http://C:/Users/adkin/OneDrive/Documents/Work/PersonalProjects/Portfolio/Resume.pdf"}},
+              metaData: {fileName: "Resume.pdf"}
+          });
+        });
+       </script>
+
+    <!-- Footer to add links to commonly helpful loocations -->
+    <footer>
+        <h4>Links and Contact</h4>
+        <a href="https://www.linkedin.com/in/seth-adkins-742183282/">LinkedIn</a>
+        <a href="https://github.com/SethAdkins107">Github</a>
+        adkinsseth10@gmail.com
+    </footer>
 </body>
